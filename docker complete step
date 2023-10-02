@@ -1,0 +1,71 @@
+
+Docker  Definition 
+what is node
+
+any application or daemon services running in vm that is called a node
+
+Docker - Shipping container  node 
+
+this can achieve with the help of container
+
+Developer : Build Once, Run Anywhere(Finally)
+
+
+docker ps commend docker relation process will reflect , none of the cotainer is their 	 and only table or artichecture is coming
+
+docker ps - a  - archive data reflect, if very new machine it  will reflect only table
+
+
+Dockerhunb - all the images stored , Public repo
+
+
+
+Step 
+
+sudo -i
+sudo apt-get update
+sudo  apt install docker.io
+docker -v
+docker pull hello-world ---- download the image from dockerhub to our local machin with help of internet.	 9Client)
+ Daemon is backgroud process who will perform all the activity
+ code of the OS that is called a image
+ If will run Docker images it will become a container
+ Run the image it will become a container
+ 
+ docker run hello-world 
+ docker run -t ubuntu
+ docker start <container id>
+ docker exec -it 52192e8e1583 bin/bash
+ -------------------------------------------
+ step Nginx : 
+ docker pull nginx
+ docker run -p 80:80 nginx
+ 
+ -----naming and port mapping concept--------------
+ docker run --name docker-nginx -p 80:80 nginx
+
+ 
+ apt install openjdk-11-jdk
+ docker run nginx  -- container  
+ docker -p 80:80 nginx
+ 
+ 
+ web application creation :
+ 
+ mkdir -p ~/docker-nginx/html
+ cd ~/docker-nginx/html
+ vi index.html
+ 
+ Html file 
+ 
+ 
+ <html>
+ <head>
+ </head>
+ <body>
+   <h1>Hello World<h1>
+ </body>
+</html>
+
+docker run --name docker-nginx -p 80:80 nginx -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+
