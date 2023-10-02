@@ -1,0 +1,20 @@
+Remove a Running Container:
+docker container rm -f <container_id_or_name> bash
+
+  Remove a Stopped Container:
+docker container rm <container_id_or_name>  bash
+
+  Remove All Containers:
+docker container rm $(docker ps -a -q)
+
+  Remove Multiple Containers:
+docker container rm <container_id_or_name1> <container_id_or_name2> ...
+
+Remove a Directory and its Contents using rm:
+
+rm -r /path/to/directory
+
+  syntax : remove directoryname
+rm -rf  <directoryname>
+
+  
